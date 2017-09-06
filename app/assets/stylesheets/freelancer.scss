@@ -29,7 +29,12 @@ a.active {
   color: #18BC9C;
   outline: none;
 }
-h1,
+h1 {
+   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5em;
+} 
 h2,
 h3,
 h4,
@@ -570,6 +575,13 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 8em;
+}
+header .intro-text .dave {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 100px;
 }
 header .intro-text .skills {
   font-size: 1.25em;
