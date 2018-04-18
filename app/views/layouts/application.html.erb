@@ -5,76 +5,67 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lamp Consultancy Ghana Business">
+  <meta name="description" content=".">
   <meta name="author" content="David Adafia">
   <title>LAMP CONSULT</title>
 
-  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    "/assets/freelancer.css" %>
-  <%= stylesheet_link_tag    "/assets/bootstrap.css" %>
+  
 
+  <%= stylesheet_link_tag    "/assets/bootstrap.min.css" %>
+  <%= stylesheet_link_tag    "/assets/font-awesome.css" %>
+  <%= stylesheet_link_tag    "/assets/nivo-lightbox.css" %>
+  <%= stylesheet_link_tag    "/assets/default.css" %>
+  <%= stylesheet_link_tag    "/assets/animations.css" %>
+  <%= stylesheet_link_tag    "/assets/style.css" %>
+  <%= stylesheet_link_tag    "/assets/defaultt.css" %>
 
-
+  
 </head>
-<body>
-<!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="/homes/index">
-                     <span class="light">LAMP CONSULT</span>
-                </a>
-            </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <%= link_to 'ABOUT',homes_index_path %>
-                    </li>
-                    <li class="page-scroll">
-                        <%= link_to 'SERVICES',services_index_path %>
-                    </li>
-                    <li class="page-scroll">
-                        <%= link_to 'CONTACT US',contact_index_path %>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <!-- page loader -->
+  <div id="page-loader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container con1">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <div class="spinner-container con2">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+        </div>
+        <div class="spinner-container con3">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /page loader -->
 
-	<%= yield %>
+<%= yield %>
 
-	<!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-sm-12">
-                        <h3 class="text-center text-muted">LAMP CONSULT LIMITED</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Lamp Consult Ltd. 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<%= javascript_include_tag "/assets/jquery.min.js" %>
+<%= javascript_include_tag "/assets/bootstrap.min.js" %>
+<%= javascript_include_tag "/assets/jquery.sticky.js" %>
+<%= javascript_include_tag "/assets/stellar.js" %>
+<%= javascript_include_tag "/assets/jquery.easing.min.js" %>
+<%= javascript_include_tag "/assets/jquery.scrollTo.js" %>
+<%= javascript_include_tag "/assets/jquery.appear.js" %>
+<%= javascript_include_tag "/assets/nivo-lightbox.min.js" %>
+<%= javascript_include_tag "/assets/custom.js" %>
+<%= javascript_include_tag "/assets/css3-animate-it.js" %>
+<%= javascript_include_tag "/assets/gmap.js" %>
+
+
 </body>
 </html>
